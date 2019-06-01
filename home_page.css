@@ -1,0 +1,248 @@
+.freedom {
+  height: 60vh;
+  background: url("https://enterprisetimes.co.uk/wp-content/uploads/2017/01/Freedom.jpg");
+  background-size: cover;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-clip: border-box;
+  position: relative;
+}
+
+.freedom p {
+  font-weight: bold;
+  margin-top: 1.6rem;
+  padding: 0.6rem;
+  color: white;
+  position: absolute;
+  top: 65%;
+  font-size: 2.4rem;
+  text-shadow: 2px 0 black;
+}
+
+/*lists*/
+.after-picture h2 {
+  margin: 2rem 0;
+  text-align: center;
+  color: #488e40;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.choises {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  max-width: 64rem;
+}
+.choise {
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 0.6rem;
+  font-family: "Lato", sans-serif;
+}
+.choise button:hover {
+  color: red;
+}
+.first {
+  background-color: rgb(179, 216, 188);
+}
+h3 {
+  color: #c289d3;
+  margin-top: 0px;
+}
+.first p {
+  font-weight: bold;
+  padding-right: 1.3rem;
+  padding-left: 1rem;
+}
+ul .last-li {
+  margin: 0;
+}
+.first li {
+  color: #06300d;
+}
+
+.second {
+  background-color: #379e3e;
+  border-right: 4px solid #717275;
+  border-bottom: 4px solid #717275;
+}
+.second .recomanded {
+  -webkit-box-shadow: 2px 2px 2px 2px rbga(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 2px 2px rbga(0, 0, 0, 0.5);
+  border-radius: 6px;
+  margin: 0.4rem auto;
+  background-color: #f7f9f7;
+  text-transform: uppercase;
+  color: #12601e;
+  font-size: 0.9rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  -webkit-box-shadow: 1px 1px 1px 1px green;
+  box-shadow: 1px 1px 1px 1px green;
+  max-width: 10rem;
+}
+.second .pay {
+  color: #26470f;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+}
+.second p {
+  font-weight: bold;
+  color: #f7f9f7;
+  padding-right: 1.3rem;
+  padding-left: 1.3rem;
+  font-family: "Lato", sans-serif;
+}
+section h2 {
+  text-transform: uppercase;
+  color: #f7f9f7;
+  font-size: 0.9rem;
+  font-family: "Lato", sans-serif;
+}
+section ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0.4rem;
+}
+section li {
+  margin: 0.4rem 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  color: #f7f9f7;
+}
+
+#footer {
+  height: 260px;
+  background-color: #f95470;
+  color: #f7f9f7;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  margin-top: 2.5rem;
+  font-weight: bold;
+}
+#footer .reasons {
+  padding-top: 2.2rem;
+  margin-bottom: 0px;
+  letter-spacing: 1px;
+  font-weight: 1300;
+}
+#footer section {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: middle;
+}
+#footer .krug {
+  border: 2px solid black;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 1.3rem;
+}
+#footer section .first {
+  margin-top: 1rem;
+}
+
+/* pop up window */
+
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+  text-align: center;
+}
+
+.modal__action {
+  border: 1px solid #0e4f1f;
+  background: #0e4f1f;
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.modal__action:hover,
+.modal__action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
+
+.modal__action--negative {
+  background: red;
+  border-color: red;
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active {
+  background: #ff5454;
+  border-color: #ff5454;
+}
+@media (max-width: 50rem) {
+  .choises {
+    width: 90vw;
+  }
+}
+@media (max-width: 36rem) {
+  .freedom {
+    height: 40vh;
+  }
+  .freedom p {
+    font-size: 1.4rem;
+  }
+  .after-picture h2 {
+    padding: 1rem 0;
+  }
+  .choises {
+    width: 80vw;
+  }
+  .choise {
+    display: block;
+    width: 95%;
+    margin: 2rem auto;
+    padding-top: 0.5rem;
+  }
+
+  .second .recomanded {
+    margin: 0.9 auto;
+    background-color: #c6c2c2;
+  }
+
+  #footer {
+    height: 38rem;
+  }
+  #footer .reasons {
+    padding-top: 0.8rem;
+  }
+  #footer section {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  #footer .krug {
+    margin: 0 auto;
+  }
+}

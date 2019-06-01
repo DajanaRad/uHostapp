@@ -1,0 +1,132 @@
+main {
+  margin-top: 4rem;
+  /* height: calc(100vh - 7.5rem); */
+}
+span {
+  font-size: 1rem;
+  color: red;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+main h1 {
+  text-align: center;
+  color: #66092d;
+}
+main div .singup-form input[type="submit"] {
+  width: 8rem;
+}
+.singup-form {
+  margin-bottom: 3rem;
+  padding-left: 1rem;
+}
+.singup-form input,
+.singup-form select,
+.singup-form label {
+  display: block;
+  margin: 1rem auto 0 auto;
+  width: 90vw;
+  font-weight: 700;
+}
+
+.singup-form input,
+.singup-form select {
+  border: 1px solid grey;
+  padding: 0.2rem;
+}
+
+.singup-form input:focus,
+.singup-form select:focus {
+  outline: none;
+  background: #d8f3df;
+  border-color: #031c03;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  width: 1rem;
+  border: 1px solid grey;
+  height: 1rem;
+  line-height: 1rem;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0.7rem;
+}
+
+input[type="checkbox"]:checked {
+  background: darkgrey;
+  border-color: black;
+}
+label[for="agree"] {
+  display: inline-block;
+  width: calc(100% - 4rem);
+}
+
+.singup-form input[type="submit"]:active {
+  background: #626362;
+}
+
+.singup-form :invalid {
+  border-color: #ef0404;
+  background-color: #edb1b1;
+}
+div a {
+  text-decoration: none;
+  color: #010916;
+}
+div .login {
+  color: blue;
+  text-decoration: underline;
+}
+div button a {
+  color: #f9fafc;
+}
+.have_account {
+  text-align: center;
+}
+@media (min-width: 38rem) {
+  .singup-form input,
+  .singup-form select,
+  .singup-form label {
+    width: 400px;
+  }
+
+  .div-checkbox {
+    margin: 1rem auto;
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
+  .singup-form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3rem 1rem 600px;
+    grid-template-columns: 3rem 600px;
+    grid-column-gap: 1rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    grid-template-areas:
+      "title title"
+      "choos-title choos-title";
+  }
+
+  input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 0.7rem;
+    width: 1rem;
+  }
+
+  label[for="agree"] {
+    display: inline-block;
+    width: 15rem;
+  }
+
+  main div .singup-form input[type="submit"] {
+    width: 8rem;
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+    position: relative;
+    left: 15rem;
+  }
+}

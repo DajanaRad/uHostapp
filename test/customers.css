@@ -1,0 +1,111 @@
+main {
+  margin: 0;
+}
+
+#customer-1 .testimonial__info {
+  text-align: right;
+  justify-items: start;
+  align-items: start;
+}
+main .content #customer-2 {
+  text-align: right;
+}
+.testimonial {
+  max-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.testimonial__info {
+  width: 20%;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  margin: 0;
+}
+.testimonial__image-container {
+  width: 40%;
+  max-width: 580px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  margin-top: 5rem;
+  -webkit-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  transform: skew(20deg);
+  overflow: hidden;
+}
+.testimonial__image {
+  width: 100%;
+  -webkit-transform: skew(-20deg) scale(1.4);
+  -ms-transform: skew(-20deg) scale(1.4);
+  transform: skew(-20deg) scale(1.4);
+}
+.testimonial__name {
+  color: #e53b3b;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+}
+.testimonial__subtitle {
+  color: #c6c4c4;
+  font-size: 1rem;
+  margin: 0;
+}
+.testimonial__subtitle a {
+  text-decoration: none;
+  color: #c6c4c4;
+}
+.testimonial__text {
+  margin-top: 0;
+}
+#customer-2 .testimonial__info {
+  text-align: left;
+}
+@media (max-width: 36rem) {
+  .testimonial {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .testimonial__image-container {
+    display: block;
+    height: 100%;
+    width: 80%;
+    max-width: 25rem;
+  }
+  .testimonial__image {
+    width: 100%;
+  }
+  #customer-1 .testimonial__image-container {
+    margin-top: 1rem;
+  }
+  #customer-1,
+  #customer-2 {
+    margin: 0 auto;
+  }
+  #customer-1 .testimonial__info {
+    width: 92%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: 1rem;
+  }
+  #customer-2 .testimonial__info {
+    width: 92%;
+    margin-left: 1rem;
+  }
+  #customer-2 .testimonial__image-container {
+    margin-top: 0;
+  }
+}

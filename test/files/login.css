@@ -1,0 +1,16 @@
+main {
+  margin: 4rem;
+}
+.singup-form {
+  margin: 3rem 0;
+}
+.singup-form div {
+  margin-top: 3rem;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
+.submit_button {
+  text-align: center;
+}
