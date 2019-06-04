@@ -1,2 +1,1 @@
-src/main/resources/static/* linguist-vendored
-home_page.rb linguist-documentation=true
+*.* linguist-language=Php
