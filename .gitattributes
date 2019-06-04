@@ -1,2 +1,2 @@
 src/main/resources/static/* linguist-vendored
-documented_code.rb linguist-documentation=true
+home_page.rb linguist-documentation=true
